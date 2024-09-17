@@ -1,6 +1,6 @@
 #1 - Calcular mediante recursividad la potencia de un número, mediante una función que
 #recibe un número base de tipo entero y un exponente de tipo entero. Utilizar parámetros
-#opcionales para definir que si la función no recibe ningún parámetro devolverá 2 al cuadrado.
+#opcionales para definir que si la función no recibe ningún parámetro devolverá 2 al cuadrado..SS
 
 def calcular_potencia_numero(base : int = 2, expo : int = 2) ->int:
     '''Calcula la potencia de base y exponente'''
