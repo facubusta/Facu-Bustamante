@@ -14,5 +14,5 @@ def calcular_potencia_numero(base : int = 2, expo : int = 2) ->int:
         return 1 / calcular_potencia_numero(base, -expo)
 
 base = 10
-expo = -4
+expo = -2
 print(f"El resultado de calcular {base} por {expo} es de :  {calcular_potencia_numero(base, expo)}")
