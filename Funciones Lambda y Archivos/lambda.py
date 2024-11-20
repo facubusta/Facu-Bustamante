@@ -49,10 +49,17 @@ def guardar_matriz_como_csv(matriz: list, nombre_archivo: str):
     '''
     Guarda una matriz (lista de listas) en un archivo .csv
     '''
-    with open(nombre_archivo, mode='w', newline='') as archivo:
-            escritor = csv.writer(archivo)
-            for fila in matriz:
-                escritor.writerow(fila)
-matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    with open(nombre_archivo, "w") as archivo:
+        for fila in matriz:
+            linea = ""
 
-guardar_matriz_como_csv(matriz, "matriz.csv")
+            for i in range(len(fila)):
+                linea += str(fila[i])
+
+                if i < (len(fila) - 1):
+                    linea += ","
+        
+            archivo.write(linea + "\n")
+matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 11]]
+
+guardar_matriz_como_csv(matriz, "Facu-Bustamante/Funciones Lambda y Archivos/archivo.txt")
